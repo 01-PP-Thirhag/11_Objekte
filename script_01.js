@@ -31,18 +31,15 @@
 /***** Objekte 1 Daten/Funktionen *******/
 let person = {
 
-                firstName:"Miezs",
+                firstName:"Miez",
                 familyName:"Miau",
                 salary: [120000,160000],
                 permission: true,
                 sayHello:
                         function(){
-                                return "Hello!";
+                                return "Hello, i am " + person.firstName + "!";
                         }     
         };
-
-        
-
 
 output(person);
 output(person.firstName);
@@ -50,12 +47,13 @@ output(person.permission);
 output(person.salary[1]);
 
 person.familyName =  "Miau";
+
+
+const txt =     "Ich bin " + this.firstName +" "+ 
+                person.familyName + "und verdiene " + 
+                person.salary[1] + "p.a. ";
+output(txt);
 output(person.sayHello());
-
-const =     "Ich bin " + person.firstName +" "+
-                person.familyName +
-                "und verdiene" 
-
 
 /** Ausgabe */
 function output(outputData) {
