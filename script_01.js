@@ -13,7 +13,7 @@
 //                 ["Ich","bin","Max"],
 //                 ["Ich","bin","Moritz"]
 //         ];
-        
+
 // output(arr);
 // output(arr[0]);
 // output(arr[0][0]+ " " + arr[1][2]);
@@ -46,8 +46,6 @@ output(person.permission);
 output(person.salary[1]);
 
 person.familyName =  "Miau";
-
-output(txt);
 
 const txt =     "Ich bin " + this.firstName +" "+ 
                 person.familyName + "und verdiene " + 
