@@ -1,5 +1,4 @@
-
-// /***** Erinnerung: Arrays *******/
+/***** Erinnerung: Arrays *******/
 
 // let arr;
 // arr = ["Ich","bin","Max"];
@@ -7,54 +6,75 @@
 // output(arr[0]);
 // output("------------");
 
-// // nested arrays - Prinzip: [[[]]]
-// // nested arrays  - hier: [[],[]]
+// nested arrays [[[]]]
+// nested arrays [[],[]]
 // arr =   [
-//                 ["Ich","bin","Max"],
-//                 ["Ich","bin","Moritz"]
+//                  ["Ich","bin","Max"],
+//                  ["Ich","bin","Moritz"]
 //         ];
 
-// output(arr);
-// output(arr[0]);
-// output(arr[0][0]+ " " + arr[1][2]);
-// output(arr[1][0]);
+// // output(arr);
+// // output(arr[0]);
+// // output(arr[0][2]);
+// // output(arr[0][1] + " " + arr[1][2]);
 
 // // nested loop
 // for (let i = 0; i < arr.length; i++) {
-//     for (let j = 0; j < arr[i].length; j++) {
-//         output("Index i: " + i + " Index j: " + j);
-//         output(arr[i][j]);       
-//     }
+//         for (let j = 0; j < arr[i].length; j++) {
+//                 output("Index i: "+i+"Index j: "+j)
+//                 output(arr[i][j]);
+                
+//         }
 // }
 
 /***** Objekte 1 Daten/Funktionen *******/
-let person = {
+// let person =    {
+//                         firstName:"Thomas",
+//                         familyName:"Korn",
+//                         salary: [120000,160000],
+//                         permission: true,
+//                         sayHello:
+//                                 function(){
+//                                         return "Hello, ich bin "+
+//                                         this.firstName+"!";
+//                                 }
+//                 };
 
-                firstName:"Miez",
-                familyName:"Miau",
-                salary: [120000,160000],
-                permission: true,
-                sayHello:
-                        function(){
-                                return "Hello, i am " + person.firstName + "!";
-                        }     
-        };
+// output(person);
+// output(person.firstName);
+// output(person.familyName);
+// output(person.salary[1]);
+// output(person.permission);
+// output(person.sayHello());
 
-output(person);
-output(person.firstName);
-output(person.permission);
-output(person.salary[1]);
+// const txt =      person.sayHello() + " Ich bin " + person.firstName + " " +
+//                  person.familyName +
+//                  " und verdiene " +
+//                  person.salary[1] + " p.a";
 
-person.familyName =  "Miau";
+// output(txt);
 
-const txt =     "Ich bin " + this.firstName +" "+ 
-                person.familyName + "und verdiene " + 
-                person.salary[1] + "p.a. ";
-output(txt);
-output(person.sayHello());
+/***** Objekte 2 - Hierarchie *****/
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+const baikal = {
+        value:"10m",
+        deep:{
+                deeper:{
+                        deepest:{
+                                value:"Das Licht - auf 1642m!",
+                                temperature: 4
+                        }
+                }
+        }
+};
+
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.deepest.value);
+output(baikal.deep.deeper.deepest.temperature);
 
 /** Ausgabe */
 function output(outputData) {
         console.log(outputData);
 }
-
